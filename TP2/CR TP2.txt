@@ -1,0 +1,44 @@
+Dessaigne Anaëlle
+Bensaber Ilyas
+
+
+TP 2 - Génie Logiciel
+
+
+Exercice 1 - Make
+
+  La première commande "make" compile tout les fichiers .c et .h
+  La deuxièmre commande recompile seulement pour réobtenir l'exécutable.
+  Après la modification du fichier "function.c", "make" recompile seulement le fichier .c et son fichier .h et réobtient l'exécutable.
+  "make clean" exécute la fonction "clean" écrite dans le makefile, qui efface les fichiers ".o" et l'éxécutable (cela ne laisse plus que les fichiers ".h" et ".c").
+  
+  Les résultats des commandes pour le "Makefile évolué" sont exactement les mêmes.
+
+
+
+Exercice 2 - Scons
+
+  La première commande "scons" compile tout les fichiers .c et .h comme la commande "make" pour le Makefile.
+  La deuxièmre commande recompile seulement pour réobtenir l'exécutable.
+  Après la modification du fichier "function.h", "scons" recompile seulement le fichier .h et son fichier .c et réobtient l'exécutable.
+  "scons -c" efface les fichiers ".o" et l'éxécutable (cela ne laisse plus que les fichiers ".h" et ".c").
+
+
+
+Exercice 3 - Rake
+
+  La première commande "rake" compile tout les fichiers .c et .h comme la commande "make" pour le Makefile.
+  La deuxièmre commande recompile seulement pour réobtenir l'exécutable.
+  Après la modification du fichier "function.h", "rake" recompile seulement le fichier .h et son fichier .c et réobtient l'exécutable.
+  "rake clean" efface les fichiers ".o" et l'éxécutable (cela ne laisse plus que les fichiers ".h" et ".c").
+
+
+
+Exercice 4 - Ant
+
+  La commande "ant" permet de compiler les fichiers ".java" et de mettre les fichiers ".build" dans un dossier "build".
+  La deuxième commande ne recompile pas les fichiers ".java".
+  Après la modification du fichier "Function.java", "ant" recompile seulement le fichier ".java" modifié.
+  La commande "ant dist" créé un dossier "dist" et "lib" (à l'intérieur de "dist") où il l'y passe une librairie correspondant au projet créé avec les .java et .class
+  La commande "ant clean" efface tout les fichiers et dossiers créés en compilant (c'est-à-dire les dossiers "build", "dist" ainsi que tout les fichiers à l'intérieur).
+  Cette fois-ci la commande "ant dist" compile d'abord les fichiers ".java" pour créer les fichiers ".class" et pouvoir ensuite faire la librairie dans les dossiers "dist/lib".
